@@ -50,6 +50,40 @@
                     <use href="./images/icons.svg#icon-cross"></use>
                 </svg>
             </button>
+            <form class="order-form">
+                <p class="order-form-title">Оставьте свои данные, мы вам перезвоним</p>
+                <div class="order-form-fild">
+                    <label for="user-name" class="order-form-fild-label">Имя</label>
+                    <input class="user-data" type="text" name="user-name" id="user-name"/>
+                    <svg class="user-icon" width="12" height="12">
+                        <use href="./images/icons.svg#icon-user-name"></use>
+                    </svg></input>
+                    
+                </div>
+                <div class="order-form-fild">
+                    <label for="user-phone"  class="order-form-fild-label">Телефон</label>
+                    <input class="user-data" type="tel"  name="user-phone" id="user-phone"/>
+                    <svg class="user-icon" width="13" height="13">
+                        <use href="./images/icons.svg#icon-user-tel"></use>
+                    </svg>
+                </div>
+                <div class="order-form-fild">
+                    <label for="user-mail"  class="order-form-fild-label">Почта</label>
+                    <input class="user-data" type="E-mail"  name="user-mail" id="user-mail"/>
+                    <svg class="user-icon" width="15" height="12">
+                        <use href="./images/icons.svg#icon-user-mail"></use>
+                    </svg>
+                </div>
+                <div class="order-form-fild">
+                    <label for="user-massage" class="order-form-fild-label">Комментарий</label>
+                    <textarea class="user-massage user-data" id="user-massage" name="user-massage" placeholder="Введите текст"></textarea>
+                </div>
+                <div class="user-checkbox-fild">
+                    <input class="user-checkbox hidden" type="checkbox" name="user-checkbox" id="user-checkbox">
+                    <label for="user-checkbox">Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a></label>
+                </div>
+                <button class="button order-button" type="submit">Отправить</button>
+                </form>
         </div>
         
     </div>
@@ -330,7 +364,19 @@
   </a> 
   </div>
 </div>
+
+<form class="subscription-form">
+<h3 class="subscription-form-title title">Подпишитесь на рассылку</h3>
+<div class="subscription-form-fild">
+<input class="mail-input" type="email" name="mail" id="mail" placeholder="E-mail">
+<button class="button subscription-button" type="submit">Подписаться
+    <svg class="subscription-submit-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-send"></use>
+    </svg>
+</button>
 </div>
+</div>
+</form>
 </div>
    
 </footer>
