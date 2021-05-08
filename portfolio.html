@@ -23,15 +23,16 @@
         </nav>
         <ul class="list contacts">
             <li class="contacts-item">
-                <svg class="contacts-icon" width="16" height="12">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                
+                <a class="link" href="mailto:info@devstudio.com">
+                    <svg class="contacts-icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a></li>
             <li class="contacts-item">
-                <svg class="contacts-icon" width="10" height="16">
+                
+                <a class="link" href="tel:+380961111111"><svg class="contacts-icon" width="10" height="16">
                     <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </svg>+38 096 111 11 11</a></li>
         </ul>
     </div>
   
@@ -213,10 +214,21 @@
       </a> 
       </div>
     </div>
-    </div>
-    </div>
-       
-    </footer>
-   
-    </body>
-    </html>
+    <form class="subscription-form">
+        <h3 class="subscription-form-title title">Подпишитесь на рассылку</h3>
+        <div class="subscription-form-fild">
+        <input class="mail-input" type="email" name="mail" id="mail" placeholder="E-mail">
+        <button class="button subscription-button" type="submit">Подписаться
+            <svg class="subscription-submit-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+        </button>
+        </div>
+        </div>
+        </form>
+        </div>
+           
+        </footer>
+        <script src="./js/modal.js"></script>
+        </body>
+        </html>
