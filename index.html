@@ -57,7 +57,7 @@
                     <input class="user-data" type="text" name="user-name" id="user-name"/>
                     <svg class="user-icon" width="12" height="12">
                         <use href="./images/icons.svg#icon-user-name"></use>
-                    </svg></input>
+                    </svg>
                     
                 </div>
                 <div class="order-form-fild">
@@ -69,7 +69,7 @@
                 </div>
                 <div class="order-form-fild">
                     <label for="user-mail"  class="order-form-fild-label">Почта</label>
-                    <input class="user-data" type="E-mail"  name="user-mail" id="user-mail"/>
+                    <input class="user-data" type="email"  name="user-mail" id="user-mail"/>
                     <svg class="user-icon" width="15" height="12">
                         <use href="./images/icons.svg#icon-user-mail"></use>
                     </svg>
@@ -78,17 +78,13 @@
                     <label for="user-massage" class="order-form-fild-label">Комментарий</label>
                     <textarea class="user-massage user-data" id="user-massage" name="user-massage" placeholder="Введите текст"></textarea>
                 </div>
-                <div class="user-checkbox-fild">
-                    
-                    <label for="user-checkbox" class="checkbox-fild-label">Соглашаюсь с рассылкой и принимаю&ensp; <a href="#" class="checkbox-link"> Условия договора</a></label>
-                    <input class="user-checkbox hidden" type="checkbox" name="user-checkbox" id="user-checkbox" required>
-                    <div class="box">
-                        <svg class="icon-check" width="11" height="8">
-                            <use href="./images/icons.svg#icon-check"></use>
-                        </svg>
-                    </div>
-                </div>
-                <button class="button order-button" type="submit">Отправить</button>
+                
+                <input class="agreement-checkbox hidden" type="checkbox" name="agreement" id="agreement" required/>
+            <label class="agreement-label" for="agreement">Соглашаюсь с рассылкой и принимаю&ensp;
+                <a class="agreement-link" target="_blank" rel="noopener noreffer" aria-label="agreement" href="https://twitter.com"> Условия договора</a>
+            </label>
+
+                 <button class="button order-button" type="submit">Отправить</button>
                 </form>
         </div>
         
@@ -380,11 +376,11 @@
         <use href="./images/icons.svg#icon-send"></use>
     </svg>
 </button>
-</div>
+
 </div>
 </form>
 </div>
-   
+</div>
 </footer>
 <script src="./js/modal.js"></script>
 </body>
